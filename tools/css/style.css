@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+.seccion1 {
+    height: 100vh;
+    background-image: url(../image/fondo1.jpg);
+    background-attachment: fixed;
+}
+
+.nav {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.logo {
+    width: 3em;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+    font-size: 1.2em;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.seccion {
+    max-width: 1024px;
+    height: 100vh;
+    margin: auto;
+}
+
+#abrir{
+    display: none;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.marco_ppal {
+    max-width: 1024px;
+    margin: auto;
+    height: calc(100vh - 7em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marco_ppal p {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
+    color: #fff;
+    margin: 2em auto;
+}
+
+.titulo {
+    /* font-family: 'Great Vibes', cursive; */
+    font-size: 3em;
+    color: #6e4b17;
+}
+
+.tit_seccion {
+    text-align: center;
+    font-size: 2em;
+}
+
+.ubicacion_pantalla {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    padding-top: 2em;
+}
+
+.tablas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.tabla {
+    display: inline;
+}
+
+.titulo_tabla {
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reserva1 {
+    display: flex;
+    width: 100%;
+    margin: 1em auto;
+}
+
+.reserva2 {
+    width: 50%;
+}
+
+.reserva2 input {
+    width: 80%;
+    margin: auto;
+    padding: .8em 1em;
+}
+
+.reserva2 input[type=datetime-local] {
+    width: 30%;
+    padding: .8em 1em;
+}
+
+.reserva2 input[type=number] {
+    width: 20%;
+    padding: .8em 1em;
+}
+
+.textarea {
+    width: 100%;
+    padding: .8em 1em;
+    margin: 1.2em auto;
+}
+
+.btn_reserva {
+    display: block;
+    margin: auto;
+    padding: .5em 1em;
+    border-radius: 8px;
+    font-size: 1.1em;
+}
+
+.btn_reserva:hover {
+    cursor: pointer;
+    background-color: #6e4b17;
+    color: #fff;
+}
+
+.mapa_grande {
+    display: inline;
+}
+
+.mapa_chico {
+    display: none;
+}
+
+.redes {
+    width: 50px;
+}
+
+footer small {
+    text-align: center;
+    color: dimgrey;
+    display: block;
+}
+
+/* Botón para volver arriba  */
+.boton-subir {
+    position: fixed;
+    right: 5%;
+    bottom: 10px;
+    background-color: #17181C;
+    padding: 20px;
+    display: none;
+    opacity: 0.7
+}
+
+.boton-subir a {
+    font-size: 24px;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .logo{
+        align-self: flex-start;
+    }
+
+    .marco_ppal p {
+        font-size: 2em;
+        align-self:flex-start;
+    }
+
+    .titulo {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    form,
+    .tablas {
+        width: 95%;
+        margin: auto;
+    }
+
+    .seccion {
+        height: auto;
+    }
+
+    .reserva1 {
+        flex-direction: column;
+    }
+
+    .reserva2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .reserva2 input {
+        width: 100%;
+    }
+
+    .reserva2 input[type=datetime-local] {
+        width: 100%;
+    }
+
+    .reserva2 input[type=number] {
+        width: 60%;
+    }
+
+    .reserva2 p {
+        margin-top: 2em;
+    }
+
+    .ubicacion_pantalla {
+        flex-direction: column;
+    }
+
+    .mapa_grande {
+        display: none;
+    }
+
+    .mapa_chico {
+        display: inline;
+        width: 90%;
+    }
+}
